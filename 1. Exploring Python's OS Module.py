@@ -24,7 +24,7 @@ def list_directory_contents(path):
     try:
         if os.path.exists(path):
             contents = os.listdir(path)
-            print(f"Directory information: {contents}")
+            print(f"Directory contents: {contents}")
         else:
             print("Files were not found. Please add proper folder name.")
     except FileNotFoundError:
